@@ -1,0 +1,6 @@
+USE GRAPH yourgraph
+
+
+RUN LOADING JOB load_job_log_registration_1645429757382 USING MyDataSource="/home/tigergraph/tigergraph/data/gui/loading_data/log_registration"
+RUN LOADING JOB load_job_log_signing_1645429946981 USING MyDataSource="/home/tigergraph/tigergraph/data/gui/loading_data/log_signing"
+
