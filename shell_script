@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# SCRIPT BTEQ
+FILE=/home/tigergraphuser/data/regsign.btq
+bteq < ${FILE}
+
+# SCRIPT TPT
+FILE_TPT=/home/tigergraphuser/data/logregis.tpt
+tbuild -f ${FILE_TPT}
+
+FILE_TPT2=/home/tigergraphuser/data/logsign.tpt
+tbuild -f ${FILE_TPT2}
+
+
+# SCRIPT RUNNING JOB
+FILE=/home/tigergraphuser/data
+PATH=/home/tigergraph/tigergraph/app/cmd:$PATH
+
+gsql ${PATH} job.gsql
+
